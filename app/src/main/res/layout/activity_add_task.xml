@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/taskName"
+        android:padding="5dp" >
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/taskNote"
+        android:padding="5dp"
+        android:layout_below="@+id/editTextName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Is it important?"
+        android:id="@+id/priorityCheckBox"
+        android:layout_below="@+id/editTextNote"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp" />
+
+    <ImageButton
+    android:id="@+id/showPickersButton"
+    android:layout_width="50dp"
+    android:layout_height="wrap_content"
+        android:onClick="showPickers"
+    android:src="@drawable/add_alarm_button"
+    android:background="@null"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/priorityCheckBox"
+        android:layout_alignEnd="@+id/priorityCheckBox" />
+
+    <EditText
+        android:id="@+id/editTextWhenAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="5dp"
+        android:layout_below="@+id/showPickersButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/addLocationButton"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:onClick="addLocation"
+        android:src="@drawable/add_location_button"
+        android:background="@null"
+        android:layout_alignTop="@+id/showPickersButton"
+        android:layout_toLeftOf="@+id/addTaskButton"
+        android:layout_toStartOf="@+id/addTaskButton" />
+
+    <EditText
+        android:id="@+id/editTextWhereAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="5dp"
+        android:layout_below="@+id/editTextWhenAlarm"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageButton
+        android:id="@+id/addTaskButton"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:onClick="okClicked"
+        android:src="@drawable/add_task_button"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>

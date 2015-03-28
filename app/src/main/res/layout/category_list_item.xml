@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/card"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+
+    <TextView
+        android:paddingLeft="30dp"
+        android:paddingTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textViewCategoryName" />
+
+    <ImageView
+        android:paddingTop="20dp"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:id="@+id/imageViewCategoryImage"
+        android:layout_gravity="right"
+        android:layout_weight="0.09"
+        android:layout_marginRight="59dp"
+        android:layout_marginEnd="59dp"
+        android:layout_alignBottom="@+id/textViewCategoryName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

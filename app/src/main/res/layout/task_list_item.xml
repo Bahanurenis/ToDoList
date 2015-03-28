@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/card">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textViewTaskName"
+        android:text="Task Name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTaskNote"
+        android:text="Task Note"
+        android:layout_below="@+id/textViewTaskName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTaskCategory"
+        android:text="Task Category"
+        android:layout_below="@+id/textViewTaskNote"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageViewTaskPriority"
+        android:layout_below="@+id/textViewTaskName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageViewTaskDueDate"
+        android:layout_alignTop="@+id/imageViewTaskPriority"
+        android:layout_toLeftOf="@+id/imageViewTaskPriority"
+        android:layout_toStartOf="@+id/imageViewTaskPriority" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imageViewTaskLocation"
+        android:layout_below="@+id/textViewTaskName"
+        android:layout_toLeftOf="@+id/imageViewTaskPriority"
+        android:layout_toStartOf="@+id/imageViewTaskPriority"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp" />
+
+</RelativeLayout>

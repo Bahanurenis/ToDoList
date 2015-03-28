@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <EditText
+        android:id="@+id/editTextCategoryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/categoryName"
+        android:padding="5dp" >
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/addCategoryButton"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="okClicked"
+        android:text="Create New Category"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
